@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf140
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Helvetica;
+\f3\fmodern\fcharset0 Courier-BoldOblique;\f4\fnil\fcharset0 Monaco;\f5\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red106\green0\blue67;\red80\green22\blue109;\red29\green0\blue255;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14900\viewh9900\viewkind0
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+1. 
+\f1 \expnd0\expndtw0\kerning0
+O que \'e9 um ponteiro? 
+\f2\b0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural
+
+\fs28 \cf0 R: Ponteiro \'e9 uma vari\'e1vel que guarda um endere\'e7o de mem\'f3ria.
+\fs24 \
+\
+
+\f1\b\fs32 2. \expnd0\expndtw0\kerning0
+Qual o operador que retorna o endere\'e7o de uma vari\'e1vel? 
+\b0 \
+
+\fs28 R: \'c9 o operador &
+\fs32 \
+\
+
+\b 3. Como declaramos um ponteiro?\
+
+\b0 \
+
+\fs28 R: Utilizando a estrutura: (tipo da vari\'e1vel) (*) (nome da vari\'e1vel).\
+	Exemplo: int *p;\
+
+\fs32 \
+
+\b 4.Considere uma vari\'e1vel chamada 
+\f3\i \expnd0\expndtw0\kerning0
+ptr
+\f1\i0 \expnd0\expndtw0\kerning0
+, do tipo ponteiro. Como podemos acessar e modificar o conte\'fado do endere\'e7o apontado por 
+\f3\i \expnd0\expndtw0\kerning0
+ptr
+\f1\i0 \expnd0\expndtw0\kerning0
+? \
+
+\b0 \
+
+\fs28 R: Tanto para acessar quanto para modificar o conte\'fado de 
+\f3\i\b \expnd0\expndtw0\kerning0
+ptr
+\f1\i0\b0 \expnd0\expndtw0\kerning0
+ utilizamos o operador *. \
+Exemplo: 	int a =2;\
+			int *ptr = &a;\
+			 printf(\'93%d\'94, *ptr); // saida: 2\
+			*ptr =3;\
+			printf(\'93%d\'94, *ptr); // saida: 3
+\f0\fs32 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f1 \kerning1\expnd0\expndtw0 	\
+\
+
+\b 5.	\expnd0\expndtw0\kerning0
+O que ser\'e1 impresso pelo programa abaixo? 
+\f0\b0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f4\fs30 \cf2 \expnd0\expndtw0\kerning0
+     int \cf0 \expnd0\expndtw0\kerning0
+main(\cf2 \expnd0\expndtw0\kerning0
+int \cf0 \expnd0\expndtw0\kerning0
+argc,\cf2 \expnd0\expndtw0\kerning0
+char \cf0 \expnd0\expndtw0\kerning0
+**argv)\{\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \expnd0\expndtw0\kerning0
+           int \cf0 \expnd0\expndtw0\kerning0
+a,b;\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f5\fs32 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f4\fs30 \cf2 \expnd0\expndtw0\kerning0
+       int \cf0 \expnd0\expndtw0\kerning0
+*pa, *pb;\
+           a = 10;\
+           b = 20;\
+           pa = &a;\
+\ls1\ilvl0
+\f5\fs32 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f4\fs30 \expnd0\expndtw0\kerning0
+           pb = &b;\
+         *pa = *pb * 2;\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf3 \expnd0\expndtw0\kerning0
+          printf\cf0 \expnd0\expndtw0\kerning0
+(\cf4 \expnd0\expndtw0\kerning0
+"%d,%d\\n"\cf0 \expnd0\expndtw0\kerning0
+,a,b);\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \expnd0\expndtw0\kerning0
+           return \cf0 \expnd0\expndtw0\kerning0
+0;
+\f5\fs32 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\f4\fs30 \expnd0\expndtw0\kerning0
+\} \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f0\fs32 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs28 R: 40, 20
+\fs32 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+\
+\uc0\u8232 \
+}
